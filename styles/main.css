@@ -1,0 +1,54 @@
+h1 {
+    color: silver;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'starwars'; /*a name to be used later: CLAsic CONsole font*/
+    src: url('../fonts/starwars.ttf'); /*URL to font*/
+}
+/* unvisited link */
+a:link {
+color: blue;
+font:clacon;
+  }
+
+/* visited link */
+a:visited {
+color: purple;
+  }
+
+/* mouse over link */
+a:hover {
+color: hotpink;
+  }
+
+/* selected link */
+a:active {
+color: black;
+  }
+
+div {
+font-family: starwars;
+}
+
+
+.container {  position: relative; }
+
+.container:before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+       z-index: 1;
+       /*background-image: url('file://Users/unmeshjoshi/programming/SpaceProfessions/galaxy.png');*/
+       background-image: url('../images/galaxy.png');
+opacity: 0.5;
+}
+
+.content {
+position: relative; 
+          z-index: 2;
+}
